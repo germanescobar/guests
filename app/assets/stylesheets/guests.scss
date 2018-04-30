@@ -4,5 +4,10 @@
     border: 1px solid #ddd;
 
     td { vertical-align: middle; }
+
+    .guest-info {
+      font-size: 1.1rem;
+      small { display: block; }
+    }
   }
 }
