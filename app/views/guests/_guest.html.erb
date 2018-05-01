@@ -1,0 +1,10 @@
+<tr>
+  <td class="guest-info">
+    <%= guest.name %> <%= guest_status(guest) %>
+    <small><%= guest.email %></small>
+  </td>
+  <td class="text-right">
+    <%= link_to icon("fas", "check"), going_guest_path(guest), class: "btn btn-outline-success #{guest.going? ? "disabled" : ""}"  %>
+    <%= link_to icon("fas", "times"), not_going_guest_path(guest), class: "btn btn-outline-danger #{guest.not_going? ? "disabled" : ""}" %>
+  </td>
+</tr>
